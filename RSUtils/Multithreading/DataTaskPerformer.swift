@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 /// Used for background data processing using gcd, all methods must be called from main thread
-/// Cancels pending tasks, if newer are available, specially for liveobjects updates.
+/// Cancels pending tasks, if newer are available.
 public class DataTaskPerformer: NSObject {
     static var queueIndex = 0
     private let taskQueue: dispatch_queue_t
