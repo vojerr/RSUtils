@@ -17,7 +17,7 @@ public class DataTaskPerformer: NSObject {
     private var tasksBatches: [dispatch_block_t] = [];
     
     required public convenience override init() {
-        self.init(taskQueue: dispatch_queue_create("GKDataTaskPerformer-\(DataTaskPerformer.queueIndex)", DISPATCH_QUEUE_SERIAL))
+        self.init(taskQueue: dispatch_queue_create("DataTaskPerformer-\(DataTaskPerformer.queueIndex+=1)", DISPATCH_QUEUE_SERIAL))
     }
     
     private init(taskQueue: dispatch_queue_t) {

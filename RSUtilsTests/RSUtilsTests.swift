@@ -10,7 +10,6 @@ import XCTest
 @testable import RSUtils
 
 class RSUtilsTests: XCTestCase {
-    private let taskPerformer = DataTaskPerformer()
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.å
@@ -46,6 +45,8 @@ class RSUtilsTests: XCTestCase {
     }
     
     func testTaskPerformer() {
+        let taskPerformer = DataTaskPerformer()
+        
         for i in 0...100 {
             do {
                 try taskPerformer.performTask({
