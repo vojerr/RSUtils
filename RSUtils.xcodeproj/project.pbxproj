@@ -12,6 +12,7 @@
 		4E11B1091CC2CDC400363D19 /* RSUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E11B1081CC2CDC400363D19 /* RSUtilsTests.swift */; };
 		4E11B1151CC2CDF100363D19 /* WeakObjectsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E11B1141CC2CDF100363D19 /* WeakObjectsArray.swift */; };
 		4E11B1171CC2D1B500363D19 /* WeakObjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E11B1161CC2D1B500363D19 /* WeakObjectContainer.swift */; };
+		4E11B1251CC38C0200363D19 /* DataTaskPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E11B1241CC38C0200363D19 /* DataTaskPerformer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		4E11B10A1CC2CDC400363D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E11B1141CC2CDF100363D19 /* WeakObjectsArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakObjectsArray.swift; sourceTree = "<group>"; };
 		4E11B1161CC2D1B500363D19 /* WeakObjectContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakObjectContainer.swift; sourceTree = "<group>"; };
+		4E11B1241CC38C0200363D19 /* DataTaskPerformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTaskPerformer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		4E11B0FB1CC2CDC400363D19 /* RSUtils */ = {
 			isa = PBXGroup;
 			children = (
+				4E11B1231CC38B7600363D19 /* Multithreading */,
 				4E11B1131CC2CDD600363D19 /* Collections */,
 				4E11B0FC1CC2CDC400363D19 /* RSUtils.h */,
 				4E11B0FE1CC2CDC400363D19 /* Info.plist */,
@@ -98,6 +101,14 @@
 				4E11B1161CC2D1B500363D19 /* WeakObjectContainer.swift */,
 			);
 			path = Collections;
+			sourceTree = "<group>";
+		};
+		4E11B1231CC38B7600363D19 /* Multithreading */ = {
+			isa = PBXGroup;
+			children = (
+				4E11B1241CC38C0200363D19 /* DataTaskPerformer.swift */,
+			);
+			path = Multithreading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +221,7 @@
 			files = (
 				4E11B1171CC2D1B500363D19 /* WeakObjectContainer.swift in Sources */,
 				4E11B1151CC2CDF100363D19 /* WeakObjectsArray.swift in Sources */,
+				4E11B1251CC38C0200363D19 /* DataTaskPerformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +409,7 @@
 				4E11B10F1CC2CDC400363D19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4E11B1101CC2CDC400363D19 /* Build configuration list for PBXNativeTarget "RSUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +418,7 @@
 				4E11B1121CC2CDC400363D19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
