@@ -45,7 +45,7 @@ public class DataTaskPerformer: NSObject {
         try checkMainThread()
         cancelQueuedTaskExceptCurrent()
         let tasksCompletion = {
-            dispatch_async(dispatch_get_main_queue(), {
+            dispatch_sync(dispatch_get_main_queue(), {
                 completion()
                 _ = self.tasksBatches.removeAtIndex(0)
             })
