@@ -13,6 +13,10 @@
 		4E11B1151CC2CDF100363D19 /* WeakObjectsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E11B1141CC2CDF100363D19 /* WeakObjectsArray.swift */; };
 		4E11B1171CC2D1B500363D19 /* WeakObjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E11B1161CC2D1B500363D19 /* WeakObjectContainer.swift */; };
 		4E11B1251CC38C0200363D19 /* DataTaskPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E11B1241CC38C0200363D19 /* DataTaskPerformer.swift */; };
+		4E4EE7931CF64508001F66F4 /* RSProxyNavigationControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E4EE78F1CF64508001F66F4 /* RSProxyNavigationControllerDelegate.h */; };
+		4E4EE7941CF64508001F66F4 /* RSProxyNavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EE7901CF64508001F66F4 /* RSProxyNavigationControllerDelegate.m */; };
+		4E4EE7951CF64508001F66F4 /* UINavigationController+RSCompletion.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E4EE7911CF64508001F66F4 /* UINavigationController+RSCompletion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E4EE7961CF64508001F66F4 /* UINavigationController+RSCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EE7921CF64508001F66F4 /* UINavigationController+RSCompletion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 		4E11B1141CC2CDF100363D19 /* WeakObjectsArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakObjectsArray.swift; sourceTree = "<group>"; };
 		4E11B1161CC2D1B500363D19 /* WeakObjectContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakObjectContainer.swift; sourceTree = "<group>"; };
 		4E11B1241CC38C0200363D19 /* DataTaskPerformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTaskPerformer.swift; sourceTree = "<group>"; };
+		4E4EE78F1CF64508001F66F4 /* RSProxyNavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSProxyNavigationControllerDelegate.h; sourceTree = "<group>"; };
+		4E4EE7901CF64508001F66F4 /* RSProxyNavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSProxyNavigationControllerDelegate.m; sourceTree = "<group>"; };
+		4E4EE7911CF64508001F66F4 /* UINavigationController+RSCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RSCompletion.h"; sourceTree = "<group>"; };
+		4E4EE7921CF64508001F66F4 /* UINavigationController+RSCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RSCompletion.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		4E11B0FB1CC2CDC400363D19 /* RSUtils */ = {
 			isa = PBXGroup;
 			children = (
+				4E4EE78E1CF64508001F66F4 /* NavigationController */,
 				4E11B1231CC38B7600363D19 /* Multithreading */,
 				4E11B1131CC2CDD600363D19 /* Collections */,
 				4E11B0FC1CC2CDC400363D19 /* RSUtils.h */,
@@ -111,6 +120,17 @@
 			path = Multithreading;
 			sourceTree = "<group>";
 		};
+		4E4EE78E1CF64508001F66F4 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				4E4EE78F1CF64508001F66F4 /* RSProxyNavigationControllerDelegate.h */,
+				4E4EE7901CF64508001F66F4 /* RSProxyNavigationControllerDelegate.m */,
+				4E4EE7911CF64508001F66F4 /* UINavigationController+RSCompletion.h */,
+				4E4EE7921CF64508001F66F4 /* UINavigationController+RSCompletion.m */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -119,6 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E11B0FD1CC2CDC400363D19 /* RSUtils.h in Headers */,
+				4E4EE7951CF64508001F66F4 /* UINavigationController+RSCompletion.h in Headers */,
+				4E4EE7931CF64508001F66F4 /* RSProxyNavigationControllerDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +243,8 @@
 			files = (
 				4E11B1171CC2D1B500363D19 /* WeakObjectContainer.swift in Sources */,
 				4E11B1151CC2CDF100363D19 /* WeakObjectsArray.swift in Sources */,
+				4E4EE7941CF64508001F66F4 /* RSProxyNavigationControllerDelegate.m in Sources */,
+				4E4EE7961CF64508001F66F4 /* UINavigationController+RSCompletion.m in Sources */,
 				4E11B1251CC38C0200363D19 /* DataTaskPerformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

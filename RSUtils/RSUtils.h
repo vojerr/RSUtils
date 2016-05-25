@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char RSUtilsVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <RSUtils/PublicHeader.h>
 
-//#import <RSUtils/WeakObjectsArray-Swift.h>
+#import <RSUtils/UINavigationController+RSCompletion.h>
